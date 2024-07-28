@@ -12,21 +12,21 @@ public class Main {
         String[] healtPlans = new String[3];
         healtPlans[0] = healthplan.getName();
         healtPlans[1] = healthplan1.getName();
-        Employee employee = new Employee(1, "Hilal Bilun Kara", "hilal@hotmail.com", "123456", healtPlans);
-        employee.addHealthPlan(2, "c okul"); // düzeltildi
-        employee.addHealthPlan(2, "e okul"); // düzeltildi
-        employee.addHealthPlan(-1, "d okul"); // düzeltildi
-        employee.addHealthPlan(0, "f okul"); // düzeltildi
-        employee.addHealthPlan(8, "g okul"); // düzeltildi
+        Employee employee = new Employee(1, "Esra Saydan", "esra@wit.com", "939383", healtPlans);
+        employee.addHealthPlan(2, "c okul");
+        employee.addHealthPlan(2, "e okul");
+        employee.addHealthPlan(-1, "d okul");
+        employee.addHealthPlan(0, "f okul");
+        employee.addHealthPlan(8, "g okul");
         System.out.println(employee.toString());
 
         System.out.println("*******");
 
         String[] developerNames = new String[4];
-        Company company = new Company(1, "İclal", 100000, developerNames);
+        Company company = new Company(1, "Buray", 100000, developerNames);
         developerNames[0] = employee.getFullName();
-        company.addEmployee(1, "Gizem ");
-        company.addEmployee(3, "Gökçen ");
+        company.addEmployee(1, "Merve ");
+        company.addEmployee(3, "Hira ");
         System.out.println(company.toString());
     }
 }
